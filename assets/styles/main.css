@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 960px;
+  height: 930px;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+* {
+  box-sizing: border-box;
+  /* ya no suma el padding al ancho interno */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 
+header
+*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 164px;
+  padding: 0 29px 0 29px;
+}
+
+.header .search {
+  display: flex;
+  border-radius: 10px;
+  height: 30px;
+  border: solid 1px #d0d0d0;
+}
+
+.header .search input {
+  border: none;
+  background: none;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: #a5a5a5;
+}
+
+.header .search .search-button {
+  padding: 0;
+  padding-right: 10px;
+  border: none;
+  background: none;
+}
+
+/* 
+main
+ */
+
+.main-info-layout {
+  display: flex;
+  height: 537px;
+}
+
+/* aside
+ */
+
+.main-info-layout .aside {
+  width: 10%;
+}
+
+.main-info-layout .animals-list {
+  margin-left: 23px;
+}
+
+.main-info-layout .animals-list .cats, .birds {
+  margin-top: 8px;
+}
+
+.main-info-layout .animals-list .dogs h2 {
+  color: #00ffdf;
+}
+
+.main-info-layout .animals-list .cats h2 {
+  color: #1fff03;
+}
+
+.main-info-layout .animals-list .birds h2 {
+  color: #dd00ff;
+}
+
+.main-info-layout .dog-list, .cat-list, .bird-list {
+  font-family: arial;
+  margin-top: 2px;
+  margin-left: 24px;
+}
+
+.main-info-layout .dog-list {
+  color: #6330ff;
+}
+
+.main-info-layout .cat-list {
+  color: #b5b600;
+}
+
+.main-info-layout .bird-list {
+  color: #036edb;
+}
+
+/* section
+  */
+
+.main-info-layout .section-row {
+  width: 90%;
+  height: 111px;
+}
+
+.main-info-layout .four-in-a-row {
+  display: flex;
+  height: 100%;
+  padding: 0 15px 0 15px;
+}
+
+.main-info-layout .second, .third, .fourth {
+  margin-top: 30px;
+}
+
+.main-info-layout .four-in-a-row article {
+  width: 25%;
+  padding: 0 15px;
+  position: relative;
+}
+
+.Husky .Husky-info {
+  visibility: hidden;
+}
+
+.Husky:hover .Husky-info {
+  visibility: visible;
+}
+
+.main-info-layout .four-in-a-row article .Husky-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 7px 38px 7px 7px;
+}
+
+.main-info-layout .four-in-a-row article .Husky-info .options {
+  display: flex;
+  padding: 0 109px 0 0;
+  margin-top: 15px;
+}
+
+.main-info-layout .four-in-a-row article .Husky-info .options input {
+  margin: 0 6px 0 0;
+  border-radius: 6px;
+  border: solid 1px #00ffdf;
+  background-color: #00ffdf;
+}
+
+.main-info-layout .four-in-a-row article img {
+  height: 100%;
+  width: 100%;
+}
+
+/* 
+nav
+ */
+
+.nav-pages {
+  margin-left: 128px;
+  margin-top: 47px;
+}
+
+.nav-pages ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgray;
+}
+
+.nav-pages ul li {
+  padding: 0 9px 0 9px;
+}
+
+.nav-pages ul li a h2, h1 {
+  color: lightgray;
+}
+
+.nav-pages ul li a h6 {
+  font-size: 32px;
+  color: lightgray;
+}
+
+.nav-pages ul li a h6:hover {
+  color: #7d53ff;
+}
+
+.nav-pages ul li a h2:hover {
+  color: #7d53ff;
+}
+
+/* 
+ footer
+  */
+
+.footer {
+  margin-top: 87px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  color: lightgray;
+}
