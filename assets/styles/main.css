@@ -1,8 +1,10 @@
+/* 
+Global
+*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  width: 960px;
-  height: 930px;
   color: #000;
 }
 
@@ -51,12 +53,15 @@ a {
   color: #fff;
 }
 
+.d-flex {
+  display: flex;
+}
+
 /* 
 header
 */
 
 .header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 164px;
@@ -64,23 +69,22 @@ header
 }
 
 .header .search {
-  display: flex;
   border-radius: 10px;
   height: 30px;
   border: solid 1px #d0d0d0;
 }
 
-.header .search input {
+.header input {
   border: none;
   background: none;
   padding-left: 10px;
 }
 
-::placeholder {
+input ::placeholder {
   color: #a5a5a5;
 }
 
-.header .search .search-button {
+.search-button {
   padding: 0;
   padding-right: 10px;
   border: none;
@@ -91,157 +95,170 @@ header
 main
  */
 
-.main-info-layout {
-  display: flex;
-  height: 537px;
-}
-
 /* aside
  */
 
-.main-info-layout .aside {
+.aside {
   width: 10%;
 }
 
-.main-info-layout .animals-list {
+/* .aside .animals-list {
   margin-left: 23px;
-}
+} */
 
-.main-info-layout .animals-list .cats, .birds {
+.aside .cats, .birds {
   margin-top: 8px;
 }
 
-.main-info-layout .animals-list .dogs h2 {
+.aside .dogs h2 {
   color: #00ffdf;
 }
 
-.main-info-layout .animals-list .cats h2 {
+.aside .cats h2 {
   color: #1fff03;
 }
 
-.main-info-layout .animals-list .birds h2 {
+.aside .birds h2 {
   color: #dd00ff;
 }
 
-.main-info-layout .dog-list, .cat-list, .bird-list {
+/* .aside .dog-list, 
+.cat-list, 
+.bird-list {
   font-family: arial;
   margin-top: 2px;
   margin-left: 24px;
-}
+} */
 
-.main-info-layout .dog-list {
+.aside .dog-list {
   color: #6330ff;
 }
 
-.main-info-layout .cat-list {
+.aside .cat-list {
   color: #b5b600;
 }
 
-.main-info-layout .bird-list {
+.aside .bird-list {
   color: #036edb;
 }
 
 /* section
   */
 
-.main-info-layout .section-row {
+.section-row {
   width: 90%;
-  height: 111px;
 }
 
-.main-info-layout .four-in-a-row {
+.section-row .articles {
   display: flex;
-  height: 100%;
-  padding: 0 15px 0 15px;
+  margin: 0 -10px;
 }
 
-.main-info-layout .second, .third, .fourth {
-  margin-top: 30px;
-}
-
-.main-info-layout .four-in-a-row article {
+.section-row .articles article {
   width: 25%;
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+.section-row .articles img {
+  width: 100%;
+}
+
+/* 
+.section-row .dog {
+  width: 25%;
   position: relative;
 }
 
-.Husky .Husky-info {
+.dog .dog-info {
   visibility: hidden;
 }
 
-.Husky:hover .Husky-info {
+.dog:hover .dog-info {
   visibility: visible;
 }
 
-.main-info-layout .four-in-a-row article .Husky-info {
+.section-row .dog-info {
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 7px 38px 7px 7px;
 }
 
-.main-info-layout .four-in-a-row article .Husky-info .options {
+.section-row .dog-info .options {
   display: flex;
   padding: 0 109px 0 0;
   margin-top: 15px;
 }
 
-.main-info-layout .four-in-a-row article .Husky-info .options input {
+.section-row .dog-info .options input {
   margin: 0 6px 0 0;
   border-radius: 6px;
   border: solid 1px #00ffdf;
   background-color: #00ffdf;
 }
 
-.main-info-layout .four-in-a-row article img {
+.section-row .dog-info img {
   height: 100%;
   width: 100%;
+} */
+
+/*
+article
+*/
+
+.article {
+  position: relative;
+}
+
+.article .dog-info {
+  visibility: hidden;
+}
+
+.article:hover .dog-info {
+  visibility: visible;
+}
+
+.article .dog-info {
+  position: absolute;
+  height: 100%;
+  left: 10px;
+  right: 10px;
+  padding: 10px; 
+}
+
+.article .options {
+  margin-top: 35px;
+}
+
+.article .options input {
+  margin: 0 6px 0 0;
+  border-radius: 6px;
+  border: solid 1px #00ffdf;
+  background-color: #00ffdf;
 }
 
 /* 
 nav
  */
-
-.nav-pages {
-  margin-left: 128px;
-  margin-top: 47px;
-}
-
 .nav-pages ul {
-  display: flex;
   justify-content: center;
   align-items: center;
   color: lightgray;
 }
 
-.nav-pages ul li {
+.nav-pages ul li a {
   padding: 0 9px 0 9px;
+  color: lightblue;
 }
 
-.nav-pages ul li a h2, h1 {
-  color: lightgray;
-}
-
-.nav-pages ul li a h6 {
-  font-size: 32px;
-  color: lightgray;
-}
-
-.nav-pages ul li a h6:hover {
-  color: #7d53ff;
-}
-
-.nav-pages ul li a h2:hover {
+.nav-pages ul li a:hover {
   color: #7d53ff;
 }
 
 /* 
  footer
   */
-
 .footer {
-  margin-top: 87px;
-  display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
   color: lightgray;

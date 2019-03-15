@@ -6,27 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
   <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
   <script src="main.js"></script>
 </head>
 
 <body>
   <div>
     <!-- header -->
-    <header class="header">
-
+    <header class="header d-flex">
       <img src="assets/images/logo/logo.png">
-      <form class="search">
+      <form class="search d-flex">
         <input type="search" placeholder="Search">
         <button class="search-button"><img src="assets/images/searchicon/group.png"></button>
       </form>
     </header>
     <!-- main -->
-    <main class="main-info-layout">
+    <main class="main-info-layout d-flex">
       <!-- aside -->
       <aside class="aside">
-
         <ul class="animals-list">
           <li class="dogs">
             <h2>Dogs</h2>
@@ -56,15 +54,15 @@
       </aside>
       <!-- section -->
       <section class="section-row">
-        <div class="four-in-a-row">
-          <article class="Husky">
-            <div class="Husky-info">
+        <div class="articles">
+          <article class="article">
+            <div class="dog-info">
               <h2>Siberian Husky</h2>
-              <h5>Estos perritos son hermosos y muy juguetones</h5>
-              <nav class="options">
-                <input type="button" value="Buy">
-                <input type="button" value="Rent">
-              </nav>
+              <p>Estos perritos son hermosos y muy juguetones</p>
+              <ul class="options d-flex">
+                <li><input type="button" value="Buy"></li>
+                <li><input type="button" value="Rent"></li>
+              </ul>
             </div>
             <img src="assets/images/dogs/dog1.png" alt="" class="Husky-photo">
           </article>
@@ -72,83 +70,24 @@
           <article><img src="assets/images/dogs/dog1.png" alt=""></article>
           <article><img src="assets/images/dogs/dog1.png" alt=""></article>
         </div>
-        <div class="four-in-a-row second">
-          <article class="Husky">
-            <div class="Husky-info">
-              <h2>Siberian Husky</h2>
-              <h5>Estos perritos son hermosos y muy juguetones</h5>
-              <nav class="options">
-                <input type="button" value="Buy">
-                <input type="button" value="Rent">
-              </nav>
-            </div>
-            <img src="assets/images/dogs/dog1.png" alt="" class="Husky-photo">
-          </article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-        </div>
-        <div class="four-in-a-row third">
-          <article class="Husky">
-            <div class="Husky-info">
-              <h2>Siberian Husky</h2>
-              <h5>Estos perritos son hermosos y muy juguetones</h5>
-              <nav class="options">
-                <input type="button" value="Buy">
-                <input type="button" value="Rent">
-              </nav>
-            </div>
-            <img src="assets/images/dogs/dog1.png" alt="" class="Husky-photo">
-          </article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-        </div>
-        <div class="four-in-a-row fourth">
-          <article class="Husky">
-            <div class="Husky-info">
-              <h2>Siberian Husky</h2>
-              <h5>Estos perritos son hermosos y muy juguetones</h5>
-              <nav class="options">
-                <input type="button" value="Buy">
-                <input type="button" value="Rent">
-              </nav>
-            </div>
-            <img src="assets/images/dogs/dog1.png" alt="" class="Husky-photo">
-          </article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-          <article><img src="assets/images/dogs/dog1.png" alt=""></article>
-        </div>
+        <!-- nav-pages -->
+        <nav class="nav-pages">
+          <ul class="d-flex">
+            <li><a href=""><</a></li> 
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">></a></li>
+          </ul>
+        </nav>
       </section>
+
     </main>
-    <!-- nav-pages -->
-    <nav class="nav-pages">
-      <ul>
-        <li><a href="">
-            <h6>
-              <</h6> </a> </li> <li><a href="">
-                  <h2>1</h2>
-                </a></li>
-        <li><a href="">
-            <h2>2</h2>
-          </a></li>
-        <li><a href="">
-            <h2>3</h2>
-          </a></li>
-        <li><a href="">
-            <h2>4</h2>
-          </a></li>
-        <li><a href="">
-            <h2>5</h2>
-          </a></li>
-        <li><a href="">
-            <h6>></h6>
-          </a></li>
-      </ul>
-    </nav>
+
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer d-flex">
       <p>Todos los derechos reservados | 2019</p>
       <p>Creado por: Hacode</p>
     </footer>
